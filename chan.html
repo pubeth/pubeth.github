@@ -16,14 +16,26 @@
          display: inline-block;
      }
      span{
-         color:black
+         text-decoration:none;
+         color:black;
      }
     </style>
+    <script type="text/javascript">
+    var i=0;
+    var images=["product/1_poster.5e6e07b9.png","product/微信图片_20210729131529.jpg"];
+    function swap(){
+ document.getElementById("img").src=images[i];
+i++;
+if(i>1) {i=0;}
+    }
+    setInterval("swap()",1000);
+
+    </script>
 </head>
 <body>
     <div id="header">
         <img style="width:100%; background-size: contain; 
-        height: auto;"src="product/微信图片_20210729131529.jpg" alt="">
+        height: auto;"src="product/微信图片_20210729131529.jpg" id="img" alt=""/>
     </div>
     <div class="track">
 
