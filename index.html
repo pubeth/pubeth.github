@@ -48,14 +48,15 @@ f. load fun.html into your browser - ta-da!!
          controls.enableDamping = true;
          
          const envTexture = new THREE.CubeTextureLoader().load([
-             'https://bytes.usc.edu/~saty/tools/xem/x/THREE-STLLoader/img/px_50.png',
-             'https://bytes.usc.edu/~saty/tools/xem/x/THREE-STLLoader/img/nx_50.png',
-             'https://bytes.usc.edu/~saty/tools/xem/x/THREE-STLLoader/img/py_50.png',
-             'https://bytes.usc.edu/~saty/tools/xem/x/THREE-STLLoader/img/ny_50.png',
-             'https://bytes.usc.edu/~saty/tools/xem/x/THREE-STLLoader/img/pz_50.png',
-             './skyBox.png'
+             'https://pubeth.github.io/model/px.png',
+             'https://pubeth.github.io/model/nx.png',
+             'https://pubeth.github.io/model/py.png',
+             'https://pubeth.github.io/model/ny.png',
+             'https://pubeth.github.io/model/pz.png',
+             'https://pubeth.github.io/model/nz.png'
          ]);
          envTexture.mapping = THREE.CubeReflectionMapping;
+         scene.background = envTexture;
 
          let material;
          
