@@ -77,6 +77,7 @@ f. load fun.html into your browser - ta-da!!
              'https://pubeth.github.io/model/guitar.stl',
              function (geometry) {
                  const mesh = new THREE.Mesh(geometry, material)
+                 mesh.scale.set(0.1, 0.1, 0.1);
                  scene.add(mesh)
              },
              (xhr) => {
